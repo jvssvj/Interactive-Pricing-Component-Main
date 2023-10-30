@@ -1,0 +1,95 @@
+@media(max-width:565px) {
+    body {
+        font-size: .8rem;
+        margin: 1em;
+    }
+
+    .background_image img {
+        width: 100%;
+        height: 370px;
+    }
+
+    .card {
+        padding: 2em;
+        position: relative;
+        max-width: 450px;
+    }
+
+    .card > input[type=range] {
+        /* desktop */
+        display: none;
+    }
+
+    .pageviews_price > input[type=range] {
+        /* mobile */
+        display: block;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .title p {
+        margin: .7em auto;
+        max-width: 200px;
+    }
+
+    .background_title {
+        margin-top: -20em;
+    }
+
+    .pageviews_price {
+        gap: 2em;
+        flex-direction: column;
+    }
+
+    #switch-btn::before {
+        margin-top: .25rem;
+    }
+
+    .line {
+        margin: 2em 0em 1em 0em;
+    }
+
+    .checks {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .discount::before {
+        content: '-25%';
+    }
+
+    #start-trial-btn {
+        margin-top: 2em;
+    }
+
+    .attribution {
+        margin-top: 75em;
+        font-size: .7rem;
+    } 
+}
+
+@media(max-width:350px) {
+    .background_title {
+        margin-top: -23em;
+    }
+
+    .price span {
+        font-size: 2rem;  
+    }
+    
+    .infos_discount {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    #switch-btn {
+        transform: rotate(90deg);
+    }
+
+    #start-trial-btn {
+        max-width: 150px;
+    }
+}

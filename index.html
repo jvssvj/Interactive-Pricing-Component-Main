@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/src/index.css">
+  <link rel="stylesheet" href="assets/src/indexResponsive.css">
+  <script src="assets/src/index.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <section class="background_image">
+    <img src="assets/images/bg-pattern.svg" alt="">
+  </section>
+
+  <section class="title">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+    <div class="background_title">
+      <img src="assets/images/pattern-circles.svg" alt="pattern-circles">
+    </div>
+  </section>
+
+  <main class="card">
+    <section class="pageviews_price">
+      <div class="pageviews">
+        <span id="pageviews-span">100</span>
+        <p>k Pageviews</p>
+      </div>
+      <input  type="range" name="slider" id="slider" min="1" max="5" value="3">
+      <div class="price">
+        <span id="price-span">16.00</span>
+        <p>/ month</p>
+      </div>
+    </section>
+
+    <input  type="range" name="slider" id="slider" min="1" max="5" value="3">
+
+    <section class="infos_discount">
+      <span class="monthly" >Monthly Billing</span>
+      <input type="checkbox" name="switch-btn" id="switch-btn">
+      <span class="yearly">Yearly Billing</span>
+      <span class="discount"></span>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="checks">
+      <ul class="checks_li">
+        <li>
+          <img src="assets/images/icon-check.svg" alt="icon-check">
+          <span>Unlimited websites</span>
+        </li>
+        <li>
+          <img src="assets/images/icon-check.svg" alt="icon-check">
+          <span>100% data ownership</span>
+        </li>
+        <li>
+          <img src="assets/images/icon-check.svg" alt="icon-check">
+          <span>Email reports</span>
+        </li>
+      </ul>
+      <input type="button" value="Start my trial" id="start-trial-btn">
+    </section>
+  </main>
+
+    <footer class="attribution">
+    <p >Challenge by <a href="https://www.frontendmentor.io/profile/jvssvj" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a></p>
+  </footer>
+</body>
+</html>
